@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  slide-deck-ai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: slide-deck-ai-container
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+      - STREAMLIT_SERVER_HEADLESS=true
+      - STREAMLIT_SERVER_ENABLE_X_STREAMLIT_IMS=true
+      - STREAMLIT_SERVER_ENABLE_CORS=false
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    ports:
+      - "11410:8501"
+    volumes:
+      - ./logs:/app/logs
+      - ./media:/app/media
