@@ -201,3 +201,21 @@ SlideDeck AI is glad to have the following community contributions:
 Thank you all for your contributions!
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
+
+
+
+
+
+---
+
+## Docker Deployment
+
+This repository has been Dockerized for easy deployment.
+
+- **Official Repository**: [barun-saha/slide-deck-ai](https://github.com/barun-saha/slide-deck-ai)
+- **Dockerized by**: [llmsc-security](https://github.com/llmsc-security)
+- **Docker Image**: `barun-saha--slide-deck-ai_image`
+- **Container**: `barun-saha--slide-deck-ai_container`
+- **HTTP Service**: `http://127.0.0.1:11410`
+
+For Docker deployment and port mapping details, please visit our [Docker Directory](https://github.com/llmsc-security/docker-yuelin).
