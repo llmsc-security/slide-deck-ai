@@ -26,8 +26,8 @@ RUN useradd -m -u 1000 appuser && \
 
 USER appuser
 
-# Expose the Streamlit default port
-EXPOSE 8501
+# Expose the mapped port 11410
+EXPOSE 11410
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
